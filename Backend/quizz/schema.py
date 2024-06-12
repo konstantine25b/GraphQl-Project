@@ -17,7 +17,7 @@ class QuizzesType(DjangoObjectType):
 class QuestionType(DjangoObjectType):
     class Meta:
         model = Question
-        fields = ("title","quiz")
+        fields = ('id',"title","quiz")
 
 class AnswerType(DjangoObjectType):
     class Meta:
